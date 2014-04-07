@@ -1,0 +1,45 @@
+{
+  "name": "independence",
+  "version": "0.0.0",
+  "authors": [
+    "tomchentw <developer@tomchentw.com>"
+  ],
+  "description": "TO::: Write a short summary. Required. :::DO",
+  "main": "independence.js",
+  "keywords": [
+    "TODO: Add your keywords"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/tomchentw/independence",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "app",
+    "bower_components",
+    "client",
+    "config",
+    "lib",
+    "node_modules",
+    "pkg",
+    "public",
+    "server",
+    "test",
+    "tmp",
+    "gulpfile.ls",
+    "index.ls",
+    "Makefile",
+    "package.json"
+  ],
+  "devDependencies": {
+    "angular": "~1.2.13",
+    "angular-animate": "~1.2.14",
+    "angular-sanitize": "~1.2.14",
+    "angular-resource": "~1.2.14",
+    "angular-bootstrap": "~0.10.0",
+    "twbs-bootstrap-sass": "~3.1.1",
+    "ng-form-data": "~0.0.1",
+    "html2canvas": "~0.4.1",
+    "blueimp-canvas-to-blob": "~2.1.0",
+    "FileSaver": "*"
+  }
+}

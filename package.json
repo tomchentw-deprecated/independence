@@ -1,0 +1,69 @@
+{
+  "name": "independence",
+  "version": "0.0.0",
+  "description": "TO::: Write a short summary. Required. :::DO",
+  "longDescription": "TO::: Write a longer description. Optional. :::DO",
+  "main": "index.ls",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomchentw/independence"
+  },
+  "keywords": [
+    "TODO: Add your keywords"
+  ],
+  "author": {
+    "name": "tomchentw",
+    "email": "developer@tomchentw.com",
+    "url": "https://github.com/tomchentw"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "http://tomchentw.mit-license.org"
+  },
+  "bugs": {
+    "url": "https://github.com/tomchentw/independence/issues"
+  },
+  "homepage": "https://github.com/tomchentw/independence",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "scripts": {
+    "start": "lsc index"
+  },
+  "dependencies": {
+    "LiveScript": "^1.2.0",
+    "connect": "^2.13.0",
+    "q": "^1.0.0"
+  },
+  "devDependencies": {
+    "bower": "^1.2.8",
+    "highlight.js": "^8.0.0",
+    "tiny-lr": "^0.0.5",
+    "connect-livereload": "^0.3.2",
+    "protractor": "^0.20.1",
+    "coveralls": "^2.8.0",
+    "gulp": "^3.5.2",
+    "gulp-util": "^2.2.14",
+    "gulp-livescript": "^0.2.0",
+    "gulp-header": "^1.0.2",
+    "gulp-uglify": "^0.2.1",
+    "gulp-rename": "^1.1.0",
+    "gulp-bump": "^0.1.4",
+    "gulp-conventional-changelog": "^0.1.2",
+    "gulp-jade": "^0.4.1",
+    "gulp-ruby-sass": "^0.4.0",
+    "gulp-minify-css": "^0.3.0",
+    "gulp-angular-templatecache": "^1.1.0",
+    "gulp-concat": "^2.1.7",
+    "gulp-livereload": "^1.1.1",
+    "gulp-rev": "^0.3.2",
+    "karma": "^0.10.9",
+    "karma-live-preprocessor": "^0.2.2",
+    "karma-script-launcher": "^0.1.0",
+    "karma-chrome-launcher": "^0.1.2",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-jasmine": "^0.1.5",
+    "karma-phantomjs-launcher": "^0.1.2",
+    "karma-coverage": "^0.2.0"
+  }
+}
