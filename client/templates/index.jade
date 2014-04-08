@@ -4,10 +4,7 @@
 
   .row#preview_container
     #preview.center-block(html2canvas="preview")
-      .text-center(ng-style="textStyle")
-        | 我叫做
-        span(ng-bind="name")
-        |，我主張台灣獨立
+      .text-center(ng-style="textStyle" ng-bind="name | independence")
 
       .text-right(ng-style="signStyle")
         span#dash —

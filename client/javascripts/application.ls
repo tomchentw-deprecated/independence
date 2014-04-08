@@ -37,6 +37,10 @@ angular.module 'application' <[
     templateUrl: '/index.html'
     controller: 'IndexCtrl as index'
 
+.filter 'independence' ->
+  (name || '') ->
+    "我叫做#{ name }，我主張台灣獨立"
+
 .controller 'IndexCtrl' class
 
   const TOKEN = '555f740f05a1accbcaee818de2a0edb494eb6a4670614606bbdc614209e1ec68'
@@ -52,8 +56,8 @@ angular.module 'application' <[
     const newImg = do
       image: it
       album: TOKEN
-      title: @$scope.name
-      description: @$scope.name
+      title: @$filter('independence')(@$scope.name)
+      description: 'http://independence.tomchentw.com/'
 
     @$http do
       method: 'POST'
@@ -64,8 +68,8 @@ angular.module 'application' <[
         'Replacement': "Token #{ TOKEN }"
 
   @$inject = <[
-     $scope   $window   $http ]>
-  !(@$scope, @$window, @$http) ->
+     $scope   $window   $http   $filter ]>
+  !(@$scope, @$window, @$http, @$filter) ->
 
     @_blobGet = angular.bind @, _blobGet
 
@@ -77,3 +81,5 @@ angular.module 'application' <[
       deathday: '1989'
       shouldUpload: true
     }
+
+    $scope.$watch 'name' !-> $scope.$root.name = it
