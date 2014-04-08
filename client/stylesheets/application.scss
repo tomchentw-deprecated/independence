@@ -5,3 +5,40 @@ $icon-font-path: 'http://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/';
 
 body { padding-top: 70px; }
 
+// https://github.com/chriseppstein/compass/blob/stable/frameworks/compass/stylesheets/compass/layout/_stretching.scss
+@mixin stretch($offset-top:0, $offset-right:0, $offset-bottom:0, $offset-left:0) {
+  position: absolute;
+  @if $offset-top { top: $offset-top; }
+  @if $offset-bottom { bottom: $offset-bottom; }
+  @if $offset-left { left: $offset-left; }
+  @if $offset-right { right: $offset-right; }
+}
+
+#preview_container {
+  background-color: black;
+  padding: 80px;
+
+  #preview {
+    @include size(851px, 315px);// http://askbrisx.com/questions/what-is-the-facebook-page-cover-photo-size-and-dimensions/
+    background-color: white;
+    font-size: 24px;
+
+    position: relative;
+    .text-center {
+      @include stretch(50%, 0, false, 0);
+      margin-top: -15px;
+    }
+
+    .text-right {
+      #dash {
+        font-weight: lighter;
+        margin-right: .2em;
+      }
+      @include stretch(65%, 30px, false, false);
+    }
+  }
+}
+
+#preview_form {
+  width: 150px;
+}

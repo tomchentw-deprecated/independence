@@ -129,16 +129,24 @@ gulp.task 'client:js:ls' ->
   return stream.pipe gulp.dest 'tmp/.js-cache'
 
 gulp.task 'client:js:bower_components' ->
-  # stream = gulp.src [
-  # ]
-  # stream.=pipe gulp-uglify! if config.env.is 'production'
-  # return stream.pipe gulp.dest 'tmp/.js-cache'
+  stream = gulp.src [
+    'bower_components/FileSaver/FileSaver.js'
+  ]
+  stream.=pipe gulp-uglify! if config.env.is 'production'
+  return stream.pipe gulp.dest 'tmp/.js-cache'
 
 gulp.task 'client:js' <[ client:templates client:js:ls client:js:bower_components ]> ->
   stream = gulp.src [
     'bower_components/angular/angular.min.js'
+    'bower_components/angular-animate/angular-animate.min.js'
+    'bower_components/angular-resource/angular-resource.min.js'
     'bower_components/angular-sanitize/angular-sanitize.min.js'
     'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js'
+    'bower_components/ng-form-data/ng-form-data.min.js'
+    'bower_components/html2canvas/build/html2canvas.min.js'
+    'bower_components/blueimp-canvas-to-blob/js/canvas-to-blob.min.js'
+    'client/javascripts/vendor/angular-ui-router.min.js'
+    'client/javascripts/vendor/angular-ujs.min.js'
     'tmp/.js-cache/*.js'
   ]
   .pipe gulp-concat 'application.js'
