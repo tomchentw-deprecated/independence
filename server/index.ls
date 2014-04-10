@@ -6,17 +6,17 @@ require! {
   '../config'
 }
 
-module.exports = ->
-  const deferred = Q.defer!
+const isProduction  = config.env.is 'production'
+const deferred      = Q.defer!
 
-  connect!
-    ..use require('connect-livereload')! unless config.env.is 'production'
+connect!
+  ..use require('connect-livereload')! unless isProduction
 
-    ..use connect.static 'public' maxAge: Infinity
-    ..use connect.static 'tmp/public' unless config.env.is 'production'
+  ..use connect.static 'public' maxAge: Infinity
+  ..use connect.static 'tmp/public'
 
-    ..listen config.port.server, !->
-      console.log "connect started at port #{ config.port.server }" &
-      deferred.resolve!
+  ..listen config.port.server, !->
+    console.log "connect started at port #{ config.port.server }" &
+    deferred.resolve!
 
-  deferred.promise
+module.exports = deferred.promise

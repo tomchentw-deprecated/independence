@@ -1,12 +1,12 @@
 {
-  "name": "independence",
-  "version": "0.0.0",
+  "name": "tc-spa-boilerplate",
+  "version": "0.0.1",
   "description": "TO::: Write a short summary. Required. :::DO",
   "longDescription": "TO::: Write a longer description. Optional. :::DO",
   "main": "index.ls",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tomchentw/independence"
+    "url": "https://github.com/tomchentw/tc-spa-boilerplate"
   },
   "keywords": [
     "TODO: Add your keywords"
@@ -21,42 +21,40 @@
     "url": "http://tomchentw.mit-license.org"
   },
   "bugs": {
-    "url": "https://github.com/tomchentw/independence/issues"
+    "url": "https://github.com/tomchentw/tc-spa-boilerplate/issues"
   },
-  "homepage": "https://github.com/tomchentw/independence",
+  "homepage": "https://github.com/tomchentw/tc-spa-boilerplate",
   "engines": {
     "node": "0.10.x"
   },
   "scripts": {
-    "start": "lsc index"
+    "start": "make server"
   },
   "dependencies": {
     "LiveScript": "^1.2.0",
+    "bower": "^1.2.8",
+    "q": "^1.0.0",
     "connect": "^2.13.0",
-    "q": "^1.0.0"
+    "highlight.js": "^8.0.0",
+    "gulp": "^3.5.2",
+    "gulp-livescript": "^0.2.0",
+    "gulp-uglify": "^0.2.1",
+    "gulp-angular-templatecache": "^1.1.0",
+    "gulp-jade": "^0.4.1",
+    "gulp-sass": "^0.7.1",
+    "gulp-minify-css": "^0.3.0",
+    "gulp-concat": "^2.1.7",
+    "gulp-rev": "^0.3.2"
   },
   "devDependencies": {
-    "bower": "^1.2.8",
-    "highlight.js": "^8.0.0",
     "tiny-lr": "^0.0.5",
     "connect-livereload": "^0.3.2",
-    "protractor": "^0.20.1",
-    "coveralls": "^2.8.0",
-    "gulp": "^3.5.2",
-    "gulp-util": "^2.2.14",
-    "gulp-livescript": "^0.2.0",
-    "gulp-header": "^1.0.2",
-    "gulp-uglify": "^0.2.1",
-    "gulp-rename": "^1.1.0",
     "gulp-bump": "^0.1.4",
     "gulp-conventional-changelog": "^0.1.2",
-    "gulp-jade": "^0.4.1",
-    "gulp-ruby-sass": "^0.4.0",
-    "gulp-minify-css": "^0.3.0",
-    "gulp-angular-templatecache": "^1.1.0",
-    "gulp-concat": "^2.1.7",
     "gulp-livereload": "^1.1.1",
-    "gulp-rev": "^0.3.2",
+    "gulp-nodemon": "^1.0.2",
+    "coveralls": "^2.8.0",
+    "protractor": "^0.20.1",
     "karma": "^0.10.9",
     "karma-live-preprocessor": "^0.2.2",
     "karma-script-launcher": "^0.1.0",
