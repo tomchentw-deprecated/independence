@@ -1,5 +1,0 @@
-require! {
-  './server/index'
-}
-
-index!

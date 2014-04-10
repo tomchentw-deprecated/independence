@@ -1,7 +1,4 @@
 angular.module 'application' <[
-  ngAnimate
-  ngResource
-  ngSanitize
   ui.bootstrap
   ui.router
   angular.ujs

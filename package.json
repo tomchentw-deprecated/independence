@@ -1,15 +1,16 @@
 {
-  "name": "tc-spa-boilerplate",
-  "version": "0.0.1",
-  "description": "TO::: Write a short summary. Required. :::DO",
-  "longDescription": "TO::: Write a longer description. Optional. :::DO",
+  "name": "independence",
+  "version": "0.0.0",
+  "description": "Taiwan Independence",
+  "longDescription": "Taiwan Independence",
   "main": "index.ls",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tomchentw/tc-spa-boilerplate"
+    "url": "https://github.com/tomchentw/independence"
   },
   "keywords": [
-    "TODO: Add your keywords"
+    "Taiwan",
+    "Independence"
   ],
   "author": {
     "name": "tomchentw",
@@ -21,9 +22,9 @@
     "url": "http://tomchentw.mit-license.org"
   },
   "bugs": {
-    "url": "https://github.com/tomchentw/tc-spa-boilerplate/issues"
+    "url": "https://github.com/tomchentw/independence/issues"
   },
-  "homepage": "https://github.com/tomchentw/tc-spa-boilerplate",
+  "homepage": "https://github.com/tomchentw/independence",
   "engines": {
     "node": "0.10.x"
   },

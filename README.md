@@ -1,5 +1,5 @@
 # independence
-> Boilerplate for AngularJS *Single Page Application* by Tom Chen
+> Taiwan Independence
 
 [![Travis CI   ](https://img.shields.io/travis/tomchentw/independence/master.svg)             ](https://travis-ci.org/tomchentw/independence)
 [![Quality     ](https://img.shields.io/codeclimate/github/tomchentw/independence.svg)        ](https://codeclimate.com/github/tomchentw/independence)

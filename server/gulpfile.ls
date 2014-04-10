@@ -13,3 +13,4 @@ gulp.task 'server' <[ client ]> ->
     script: './server/index.ls'
     execMap: ls: 'lsc'
     ignore: './tmp/**'
+
