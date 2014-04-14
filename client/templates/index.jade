@@ -19,15 +19,15 @@
       form#preview_form.center-block(role="form" name="previewForm" ng-submit="index.submit()")
         .form-group
           label 姓名
-          input.form-control(type="text" name="name" ng-model="name" required)
+          input.form-control(ga type="text" name="name" ng-model="name" required)
         .form-group
           label 生日
-          input.form-control(type="text" name="birthday" ng-model="birthday" required)
+          input.form-control(ga type="text" name="birthday" ng-model="birthday" required)
         .form-group
           label 忌日
-          input.form-control(type="text" name="deathday" ng-model="deathday")
+          input.form-control(ga type="text" name="deathday" ng-model="deathday")
         .form-group
           label(tooltip="發佈至「圖集」，請點上方導覽列連結") 同時公開發佈？
-          input(type="checkbox" name="shouldUpload" ng-model="shouldUpload")
+          input(ga type="checkbox" name="shouldUpload" ng-model="shouldUpload")
         .btn-group    
-          button.btn.btn-primary(type="submit") 下載為FB封面相片
+          button.btn.btn-primary(ga type="submit") 下載為FB封面相片

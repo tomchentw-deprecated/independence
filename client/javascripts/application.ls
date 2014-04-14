@@ -1,5 +1,6 @@
 angular.module 'application' <[
   ui.bootstrap
+  ga
   ui.router
   angular.ujs
   ng-form-data

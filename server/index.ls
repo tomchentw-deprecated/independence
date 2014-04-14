@@ -10,8 +10,6 @@ const isProduction  = config.env.is 'production'
 const deferred      = Q.defer!
 
 connect!
-  ..use require('connect-livereload')! unless isProduction
-
   ..use connect.static 'public' maxAge: Infinity
   ..use connect.static 'tmp/public'
 

@@ -2,11 +2,21 @@ doctype html
 html(ng-app="application")
   head
     meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
     base(href="/")
     title(ng-bind="name | independence") 我叫做鄭南榕，我主張台灣獨立
+    meta(name="description" content="Facebook cover photo maker for Independence of Taiwan")
     meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
+    meta(property="og:type" content="website")
+    meta(property="og:url" content="http://independence.tomchentw.com")
+    meta(property="og:title" content="我叫做鄭南榕，我主張台灣獨立" ng-attr-content="{{ name | independence }}")
+    meta(property="og:description" content="Facebook cover photo maker for Independence of Taiwan")
+
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
     link(rel="stylesheet" href=stylesheetLinkTag("application.css"))
-    script(type="text/javascript" defer src=javascriptIncludeTag("application.js"))
+    script(type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js")
+    script(type="text/javascript" src=javascriptIncludeTag("application.js"))
   body
     include partials/header
     div(role="main" ui-view)

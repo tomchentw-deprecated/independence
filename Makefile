@@ -31,7 +31,7 @@ server: clean.tmp install
 	$(gulp) --gulpfile ./server/gulpfile.ls server
 
 test.karma: install
-	$(bin)/karma start test/karma.js
+	./node_modules/karma/bin/karma start test/karma.js
 ifdef TRAVIS
 	find tmp/coverage -name lcov.info -follow -type f -print0 \
 		| xargs -0 cat | $(bin)/coveralls

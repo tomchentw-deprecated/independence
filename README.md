@@ -1,10 +1,10 @@
 # independence
 > Taiwan Independence
 
-[![Travis CI   ](https://img.shields.io/travis/tomchentw/independence/master.svg)             ](https://travis-ci.org/tomchentw/independence)
-[![Quality     ](https://img.shields.io/codeclimate/github/tomchentw/independence.svg)        ](https://codeclimate.com/github/tomchentw/independence)
-[![Coverage    ](https://img.shields.io/coveralls/tomchentw/independence.svg)                 ](https://coveralls.io/r/tomchentw/independence)
-[![Dependencies](https://img.shields.io/gemnasium/tomchentw/independence.svg)                 ](https://gemnasium.com/tomchentw/independence)
+[![Travis CI   ](https://travis-ci.org/tomchentw/independence.svg?branch=master)                        ](https://travis-ci.org/tomchentw/independence)
+[![Quality     ](https://img.shields.io/codeclimate/github/tomchentw/independence.svg)              ](https://codeclimate.com/github/tomchentw/independence)
+[![Coverage    ](https://img.shields.io/coveralls/tomchentw/independence.svg)                       ](https://coveralls.io/r/tomchentw/independence)
+[![Dependencies](https://gemnasium.com/tomchentw/independence.svg)                                  ](https://gemnasium.com/tomchentw/independence)
 
 
 ## Project philosophy

@@ -34,7 +34,6 @@ require! {
 unless config.env.is 'production'
   require! {
     'tiny-lr'
-    'connect-livereload'
     'gulp-livereload'
   }
   const livereload = tiny-lr!
@@ -134,6 +133,7 @@ gulp.task 'client:js:ls' ->
 
 gulp.task 'client:js:bower_components' ->
   stream = gulp.src [
+    'bower_components/angular-ga/ga.js'
     'bower_components/FileSaver/FileSaver.js'
   ]
   stream.=pipe gulp-uglify! if config.env.is 'production'
